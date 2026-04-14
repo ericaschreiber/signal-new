@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2018,6 +2020,53 @@
   }
 
 </style>
+
+<style id="sitefix-custom-pages">
+.page-shell{padding:140px 48px 96px;background:var(--gray-100);color:var(--off-black)}
+.page-inner{max-width:1200px;margin:0 auto}
+.page-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;margin-bottom:72px}
+.page-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin-bottom:18px;font-weight:600}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.03em;margin-bottom:18px;color:var(--off-black)}
+.page-intro{font-size:18px;line-height:1.75;color:rgba(32,32,32,.78);max-width:760px}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.page-card{display:block;background:#fff;border:1px solid rgba(0,0,0,.08);padding:36px;position:relative;text-decoration:none;color:inherit;min-height:240px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.page-card:hover{transform:translateY(-2px);border-color:rgba(0,0,0,.18);box-shadow:0 20px 40px rgba(0,0,0,.06)}
+.page-card .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon-pink);font-weight:600;margin-bottom:20px;display:block}
+.page-card:nth-child(3n+1) .tag{color:var(--neon-sky)}
+.page-card:nth-child(3n+2) .tag{color:var(--neon-pink)}
+.page-card:nth-child(3n) .tag{color:var(--neon-lime)}
+.page-card h3{font-family:'Cormorant Garamond',serif;font-size:44px;line-height:1;margin:0 0 16px;color:var(--off-black)}
+.page-card p{font-size:17px;line-height:1.7;color:rgba(32,32,32,.72);margin:0 0 36px}
+.page-card .cta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-300);font-weight:700}
+.section-block{padding:48px 0;border-top:1px solid rgba(0,0,0,.08)}
+.section-block:first-of-type{border-top:none;padding-top:0}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+.rich-text h2{font-family:'Cormorant Garamond',serif;font-size:56px;line-height:1;margin:0 0 20px;color:var(--off-black)}
+.rich-text h3{font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1;margin:28px 0 14px;color:var(--off-black)}
+.rich-text p,.rich-text li{font-size:17px;line-height:1.8;color:rgba(32,32,32,.8)}
+.rich-text ul{margin:0 0 0 20px;padding:0}
+.rich-text .lead{font-size:22px;line-height:1.6;color:rgba(32,32,32,.9)}
+.info-panel{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.info-panel h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin:0 0 14px}
+.info-panel p,.info-panel li{font-size:16px;line-height:1.7;color:rgba(32,32,32,.78)}
+.info-panel ul{margin:0 0 0 18px;padding:0}
+.quote-stack{display:grid;gap:18px}
+.quote{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px;font-style:italic}
+.form-shell{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.form-shell h3{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1.05;margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid .full{grid-column:1 / -1}
+.form-shell label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-200);margin-bottom:8px;font-weight:600}
+.form-shell input,.form-shell textarea{width:100%;padding:14px 16px;border:1px solid rgba(0,0,0,.14);font:inherit;background:#fff;color:var(--off-black)}
+.form-shell textarea{min-height:130px;resize:vertical}
+.fake-btn{display:inline-block;margin-top:20px;padding:14px 20px;border:1px solid var(--off-black);text-decoration:none;color:var(--off-black);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.meta-item{background:#fff;border:1px solid rgba(0,0,0,.08);padding:20px}
+.meta-item span{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-200);margin-bottom:10px;font-weight:700}
+.meta-item strong{font-size:18px;line-height:1.5;color:var(--off-black)}
+@media (max-width:900px){.page-hero,.two-col,.cards-grid,.form-grid,.meta-grid{grid-template-columns:1fr}.page-shell{padding:120px 24px 72px}.page-card h3{font-size:36px}}
+</style>
+
 </head>
 <body>
 <nav id="main-nav">
@@ -2047,7 +2096,38 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-<section class="detail-wrap page-shell"><div class="detail-grid"><div><a class="back-link" href="/signal-new/offerings/">← Back to Offerings</a><div class="hub-kicker">Offerings / For Teams</div><h1 class="detail-title">Group &amp;<br>Team Facilitation</h1><div class="detail-meta"><div>Custom events</div><div>Forums, teams, family offices</div></div></div><div class="detail-copy"><p>Custom events curated for your specific group. Family offices, executive teams, YPO forums, and other high-trust communities.</p><p>We design experiences that surface hidden patterns, sharpen truth, and create the conditions for profound movement.</p><div class="cta-links"><a href="/signal-new/connect/">Connect</a><a href="/signal-new/offerings/">All Offerings</a></div></div></div></section>
+<main class="page-shell">
+  <div class="page-inner">
+    <section class="page-hero">
+      <div>
+        <div class="page-kicker">Offerings</div>
+        <h1 class="page-title">Group & Team Facilitation</h1>
+      </div>
+      <p class="page-intro">Custom Signal experiences for teams and high-trust groups that want to work at the level of pattern, power, and presence.</p>
+    </section>
+    
+<section class="two-col">
+  <div class="rich-text">
+    <h2>Group &amp; Team Facilitation</h2>
+    <p class="lead">Contact us for custom events curated for your specific needs.</p>
+    <p>We work with executive teams, family offices, YPO forums, and other groups looking for transformational experiences that are both rigorous and deeply human.</p>
+    <ul><li>Teams</li><li>Family Offices</li><li>YPO Forums</li></ul>
+  </div>
+  <div class="form-shell">
+    <h3>Request an introductory meeting</h3>
+    <div class="form-grid">
+      <div><label>Name</label><input></div>
+      <div><label>Email</label><input type="email"></div>
+      <div class="full"><label>Group</label><input></div>
+      <div class="full"><label>What challenge are you facing?</label><textarea></textarea></div>
+      <div class="full"><label>What support are you looking for?</label><textarea></textarea></div>
+    </div>
+    <a href="/signal-new/connect/" class="fake-btn">Start the Conversation</a>
+  </div>
+</section>
+
+  </div>
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2081,6 +2161,6 @@
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
-</body>
-</html>
+</footer>
+<script>const navEl=document.getElementById('main-nav');window.addEventListener('scroll',()=>{if(navEl)navEl.classList.toggle('scrolled',window.scrollY>80);});</script>
+</body></html>

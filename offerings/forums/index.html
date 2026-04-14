@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2018,6 +2020,53 @@
   }
 
 </style>
+
+<style id="sitefix-custom-pages">
+.page-shell{padding:140px 48px 96px;background:var(--gray-100);color:var(--off-black)}
+.page-inner{max-width:1200px;margin:0 auto}
+.page-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;margin-bottom:72px}
+.page-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin-bottom:18px;font-weight:600}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.03em;margin-bottom:18px;color:var(--off-black)}
+.page-intro{font-size:18px;line-height:1.75;color:rgba(32,32,32,.78);max-width:760px}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.page-card{display:block;background:#fff;border:1px solid rgba(0,0,0,.08);padding:36px;position:relative;text-decoration:none;color:inherit;min-height:240px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.page-card:hover{transform:translateY(-2px);border-color:rgba(0,0,0,.18);box-shadow:0 20px 40px rgba(0,0,0,.06)}
+.page-card .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon-pink);font-weight:600;margin-bottom:20px;display:block}
+.page-card:nth-child(3n+1) .tag{color:var(--neon-sky)}
+.page-card:nth-child(3n+2) .tag{color:var(--neon-pink)}
+.page-card:nth-child(3n) .tag{color:var(--neon-lime)}
+.page-card h3{font-family:'Cormorant Garamond',serif;font-size:44px;line-height:1;margin:0 0 16px;color:var(--off-black)}
+.page-card p{font-size:17px;line-height:1.7;color:rgba(32,32,32,.72);margin:0 0 36px}
+.page-card .cta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-300);font-weight:700}
+.section-block{padding:48px 0;border-top:1px solid rgba(0,0,0,.08)}
+.section-block:first-of-type{border-top:none;padding-top:0}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+.rich-text h2{font-family:'Cormorant Garamond',serif;font-size:56px;line-height:1;margin:0 0 20px;color:var(--off-black)}
+.rich-text h3{font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1;margin:28px 0 14px;color:var(--off-black)}
+.rich-text p,.rich-text li{font-size:17px;line-height:1.8;color:rgba(32,32,32,.8)}
+.rich-text ul{margin:0 0 0 20px;padding:0}
+.rich-text .lead{font-size:22px;line-height:1.6;color:rgba(32,32,32,.9)}
+.info-panel{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.info-panel h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin:0 0 14px}
+.info-panel p,.info-panel li{font-size:16px;line-height:1.7;color:rgba(32,32,32,.78)}
+.info-panel ul{margin:0 0 0 18px;padding:0}
+.quote-stack{display:grid;gap:18px}
+.quote{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px;font-style:italic}
+.form-shell{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.form-shell h3{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1.05;margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid .full{grid-column:1 / -1}
+.form-shell label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-200);margin-bottom:8px;font-weight:600}
+.form-shell input,.form-shell textarea{width:100%;padding:14px 16px;border:1px solid rgba(0,0,0,.14);font:inherit;background:#fff;color:var(--off-black)}
+.form-shell textarea{min-height:130px;resize:vertical}
+.fake-btn{display:inline-block;margin-top:20px;padding:14px 20px;border:1px solid var(--off-black);text-decoration:none;color:var(--off-black);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.meta-item{background:#fff;border:1px solid rgba(0,0,0,.08);padding:20px}
+.meta-item span{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-200);margin-bottom:10px;font-weight:700}
+.meta-item strong{font-size:18px;line-height:1.5;color:var(--off-black)}
+@media (max-width:900px){.page-hero,.two-col,.cards-grid,.form-grid,.meta-grid{grid-template-columns:1fr}.page-shell{padding:120px 24px 72px}.page-card h3{font-size:36px}}
+</style>
+
 </head>
 <body>
 <nav id="main-nav">
@@ -2047,12 +2096,62 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-<section class="page-shell hub-hero"><div class="hub-inner"><div class="hub-kicker">Offerings / Forums</div><h1 class="hub-title">Signal Forums</h1><p class="hub-subtitle">A group of 12 leaders who come together five times a year for retreats. Explore the current forum options below.</p></div></section>
-<section class="hub-section"><div class="cards-grid three">
-<a class="hub-card" href="/signal-new/offerings/forums/fall-2026-mixed-forum/"><div class="tag">Forum</div><h3>Fall 2026 Mixed Forum</h3><p>A Signal Forum for leaders ready for deep challenge, precise feedback, and real transformation.</p><div class="arrow">↗</div></a>
-<a class="hub-card" href="/signal-new/offerings/forums/fall-2026-womens-forum/"><div class="tag">Forum</div><h3>Fall 2026 Women’s Forum</h3><p>A dedicated forum experience for women leaders committed to rigorous self-confrontation and profound aliveness.</p><div class="arrow">↗</div></a>
-<a class="hub-card" href="/signal-new/offerings/forums/fall-2026-coaches-forum/"><div class="tag">Forum</div><h3>Fall 2026 Coaches Forum</h3><p>A forum for experienced coaches who want to deepen their own work while refining how they show up in service of others.</p><div class="arrow">↗</div></a>
-</div></section>
+<main class="page-shell">
+  <div class="page-inner">
+    <section class="page-hero">
+      <div>
+        <div class="page-kicker">Offerings</div>
+        <h1 class="page-title">Signal Forums</h1>
+      </div>
+      <p class="page-intro">A group of 12 leaders who come together five times a year for retreats and small group coaching in service of truth.</p>
+    </section>
+    
+<section class="two-col section-block">
+  <div class="rich-text">
+    <h2>Signal Forums</h2>
+    <p class="lead">Intense. Provocative. Supportive. Life-changing.</p>
+    <p>The most influential leaders in the world — the ones reshaping healthcare, finance, government, and tech — struggle with the consequences of unseen and unaddressed egoic patterns. What makes Signal Forums different is that we are here to meaningfully disrupt those patterns.</p>
+    <p>With decades of experience facilitating forums around the globe, we know what it takes to create the conditions for sustainable transformation.</p>
+    <ul>
+      <li>Disruption is key, which requires being meaningfully uncomfortable.</li>
+      <li>Consistent practice between forum meetings is a non-negotiable.</li>
+      <li>Being careful gets in the way. Unedited feedback is expected.</li>
+      <li>Collective transparency is a core commitment. That means no secrets.</li>
+      <li>Aversions are named so shadows can be liberated and connections deepened.</li>
+      <li>Twelve members. Five retreats a year. Small group coaching. One shared agreement: nothing is off-limits in service of truth.</li>
+    </ul>
+  </div>
+  <div class="info-panel">
+    <h4>Forum Details</h4>
+    <p><strong>Who:</strong> 12 members and 2–3 facilitators.</p>
+    <p><strong>Length:</strong> One year with a break in August.</p>
+    <p><strong>What:</strong> Three-day kickoff retreat, four two-day retreats, six one-hour small group coaching calls, and weekly learning partner calls.</p>
+    <p><strong>Where:</strong> A private retreat center near Santa Cruz, CA, 50 minutes from the San Jose airport and 90 minutes from SFO.</p>
+    <p><strong>Cost:</strong> $40,000</p>
+  </div>
+</section>
+<section class="cards-grid section-block">
+  <a class="page-card" href="/signal-new/offerings/forums/fall-2026-mixed-forum/"><span class="tag">Forum</span><h3>Signal Mixed Forum</h3><p>Open to changemakers who want to be in a mixed gender group.</p><span class="cta">Learn More + Apply</span></a>
+  <a class="page-card" href="/signal-new/offerings/forums/fall-2026-womens-forum/"><span class="tag">Forum</span><h3>Signal Women’s Forum</h3><p>Female leaders exploring different dimensions of power while doing the core Signal Forum work.</p><span class="cta">Learn More + Apply</span></a>
+  <a class="page-card" href="/signal-new/offerings/forums/fall-2026-coaches-forum/"><span class="tag">Forum</span><h3>Signal Coaches Forum</h3><p>For coaches who want to master holding pressure and discomfort with themselves and their clients.</p><span class="cta">Learn More + Apply</span></a>
+</section>
+<section class="section-block rich-text">
+  <h3>Agreements</h3>
+  <ul>
+    <li>Take 100% responsibility for your physical, emotional, mental, and spiritual well-being throughout the Forum.</li>
+    <li>Stay curious in the face of all challenging feedback, including looking at the opposite of all of your stories.</li>
+    <li>Commit to giving direct feedback to your peers and facilitators.</li>
+    <li>Participate in the entire session, including arriving on time and staying until the end.</li>
+    <li>Have a 10-minute minimum daily meditation practice.</li>
+    <li>Meet with your learning partners each week for a 45-minute call.</li>
+    <li>Attend all retreats and coaching calls unless an exception has been negotiated.</li>
+    <li>Post weekly on the private forum discussion board and comment on others' updates.</li>
+    <li>Complete homework assignments, Enneagram assessment/interview, and read <em>The 15 Commitments of Conscious Leadership</em>.</li>
+  </ul>
+</section>
+
+  </div>
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2086,6 +2185,6 @@
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
-</body>
-</html>
+</footer>
+<script>const navEl=document.getElementById('main-nav');window.addEventListener('scroll',()=>{if(navEl)navEl.classList.toggle('scrolled',window.scrollY>80);});</script>
+</body></html>

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2018,6 +2020,53 @@
   }
 
 </style>
+
+<style id="sitefix-custom-pages">
+.page-shell{padding:140px 48px 96px;background:var(--gray-100);color:var(--off-black)}
+.page-inner{max-width:1200px;margin:0 auto}
+.page-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;margin-bottom:72px}
+.page-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin-bottom:18px;font-weight:600}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.03em;margin-bottom:18px;color:var(--off-black)}
+.page-intro{font-size:18px;line-height:1.75;color:rgba(32,32,32,.78);max-width:760px}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.page-card{display:block;background:#fff;border:1px solid rgba(0,0,0,.08);padding:36px;position:relative;text-decoration:none;color:inherit;min-height:240px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.page-card:hover{transform:translateY(-2px);border-color:rgba(0,0,0,.18);box-shadow:0 20px 40px rgba(0,0,0,.06)}
+.page-card .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon-pink);font-weight:600;margin-bottom:20px;display:block}
+.page-card:nth-child(3n+1) .tag{color:var(--neon-sky)}
+.page-card:nth-child(3n+2) .tag{color:var(--neon-pink)}
+.page-card:nth-child(3n) .tag{color:var(--neon-lime)}
+.page-card h3{font-family:'Cormorant Garamond',serif;font-size:44px;line-height:1;margin:0 0 16px;color:var(--off-black)}
+.page-card p{font-size:17px;line-height:1.7;color:rgba(32,32,32,.72);margin:0 0 36px}
+.page-card .cta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-300);font-weight:700}
+.section-block{padding:48px 0;border-top:1px solid rgba(0,0,0,.08)}
+.section-block:first-of-type{border-top:none;padding-top:0}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+.rich-text h2{font-family:'Cormorant Garamond',serif;font-size:56px;line-height:1;margin:0 0 20px;color:var(--off-black)}
+.rich-text h3{font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1;margin:28px 0 14px;color:var(--off-black)}
+.rich-text p,.rich-text li{font-size:17px;line-height:1.8;color:rgba(32,32,32,.8)}
+.rich-text ul{margin:0 0 0 20px;padding:0}
+.rich-text .lead{font-size:22px;line-height:1.6;color:rgba(32,32,32,.9)}
+.info-panel{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.info-panel h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin:0 0 14px}
+.info-panel p,.info-panel li{font-size:16px;line-height:1.7;color:rgba(32,32,32,.78)}
+.info-panel ul{margin:0 0 0 18px;padding:0}
+.quote-stack{display:grid;gap:18px}
+.quote{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px;font-style:italic}
+.form-shell{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.form-shell h3{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1.05;margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid .full{grid-column:1 / -1}
+.form-shell label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-200);margin-bottom:8px;font-weight:600}
+.form-shell input,.form-shell textarea{width:100%;padding:14px 16px;border:1px solid rgba(0,0,0,.14);font:inherit;background:#fff;color:var(--off-black)}
+.form-shell textarea{min-height:130px;resize:vertical}
+.fake-btn{display:inline-block;margin-top:20px;padding:14px 20px;border:1px solid var(--off-black);text-decoration:none;color:var(--off-black);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.meta-item{background:#fff;border:1px solid rgba(0,0,0,.08);padding:20px}
+.meta-item span{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-200);margin-bottom:10px;font-weight:700}
+.meta-item strong{font-size:18px;line-height:1.5;color:var(--off-black)}
+@media (max-width:900px){.page-hero,.two-col,.cards-grid,.form-grid,.meta-grid{grid-template-columns:1fr}.page-shell{padding:120px 24px 72px}.page-card h3{font-size:36px}}
+</style>
+
 </head>
 <body>
 <nav id="main-nav">
@@ -2047,13 +2096,25 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-<section class="page-shell hub-hero"><div class="hub-inner"><div class="hub-kicker">Offerings / Intensives</div><h1 class="hub-title">Intensives</h1><p class="hub-subtitle">3–4 day trainings. Device-free. For leaders, coaches, or couples. Explore the current intensive offerings below.</p></div></section>
-<section class="hub-section"><div class="cards-grid">
-<a class="hub-card" href="/signal-new/offerings/intensives/katie-hendricks-june-2026/"><div class="tag">Intensive</div><h3>Katie Hendricks — June 2026</h3><p>A special immersive experience hosted through Signal Institute.</p><div class="arrow">↗</div></a>
-<a class="hub-card" href="/signal-new/offerings/intensives/fall-2026-couples-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Couples Intensive</h3><p>For couples ready to confront the patterns that block intimacy, truth, and freedom.</p><div class="arrow">↗</div></a>
-<a class="hub-card" href="/signal-new/offerings/intensives/fall-2026-integrity-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Integrity Intensive</h3><p>A concentrated training around truth-telling, congruence, and whole-body alignment.</p><div class="arrow">↗</div></a>
-<a class="hub-card" href="/signal-new/offerings/intensive/fall-2026-coaches-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Coaches Intensive</h3><p>For coaches who want stronger range, sharper discernment, and more liberated impact.</p><div class="arrow">↗</div></a>
-</div></section>
+<main class="page-shell">
+  <div class="page-inner">
+    <section class="page-hero">
+      <div>
+        <div class="page-kicker">Offerings</div>
+        <h1 class="page-title">Intensives</h1>
+      </div>
+      <p class="page-intro">3–4 day trainings designed to interrupt limitations and liberate possibilities for leaders, coaches, and couples.</p>
+    </section>
+    
+<section class="cards-grid">
+  <a class="page-card" href="/signal-new/offerings/intensives/katie-hendricks-june-2026/"><span class="tag">June 2026</span><h3>Ready for Anything!</h3><p>Join Diana Chapman and Dr. Kathlyn Hendricks for an intimate gathering designed for leaders navigating rapid change.</p><span class="cta">Learn More</span></a>
+  <a class="page-card" href="/signal-new/offerings/intensives/fall-2026-couples-intensive/"><span class="tag">Couples</span><h3>Couples Intensive</h3><p>Reveal the unconscious patterns that are keeping you from deep intimacy and love. Warning: you will be uncomfortable.</p><span class="cta">Learn More</span></a>
+  <a class="page-card" href="/signal-new/offerings/intensives/fall-2026-integrity-intensive/"><span class="tag">Integrity</span><h3>The Integrity Intensive</h3><p>Stop leaking energy. Hear the signals. Trust your decisions.</p><span class="cta">Learn More</span></a>
+  <a class="page-card" href="/signal-new/offerings/intensives/fall-2026-coaches-intensive/"><span class="tag">Coaches</span><h3>Coaches Intensive</h3><p>An advanced training to liberate your challenger and stop colluding with clients’ comfort.</p><span class="cta">Learn More</span></a>
+</section>
+
+  </div>
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2087,6 +2148,6 @@
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
-</body>
-</html>
+</footer>
+<script>const navEl=document.getElementById('main-nav');window.addEventListener('scroll',()=>{if(navEl)navEl.classList.toggle('scrolled',window.scrollY>80);});</script>
+</body></html>

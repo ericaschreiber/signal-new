@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2018,6 +2020,53 @@
   }
 
 </style>
+
+<style id="sitefix-custom-pages">
+.page-shell{padding:140px 48px 96px;background:var(--gray-100);color:var(--off-black)}
+.page-inner{max-width:1200px;margin:0 auto}
+.page-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;margin-bottom:72px}
+.page-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin-bottom:18px;font-weight:600}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.03em;margin-bottom:18px;color:var(--off-black)}
+.page-intro{font-size:18px;line-height:1.75;color:rgba(32,32,32,.78);max-width:760px}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.page-card{display:block;background:#fff;border:1px solid rgba(0,0,0,.08);padding:36px;position:relative;text-decoration:none;color:inherit;min-height:240px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.page-card:hover{transform:translateY(-2px);border-color:rgba(0,0,0,.18);box-shadow:0 20px 40px rgba(0,0,0,.06)}
+.page-card .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon-pink);font-weight:600;margin-bottom:20px;display:block}
+.page-card:nth-child(3n+1) .tag{color:var(--neon-sky)}
+.page-card:nth-child(3n+2) .tag{color:var(--neon-pink)}
+.page-card:nth-child(3n) .tag{color:var(--neon-lime)}
+.page-card h3{font-family:'Cormorant Garamond',serif;font-size:44px;line-height:1;margin:0 0 16px;color:var(--off-black)}
+.page-card p{font-size:17px;line-height:1.7;color:rgba(32,32,32,.72);margin:0 0 36px}
+.page-card .cta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-300);font-weight:700}
+.section-block{padding:48px 0;border-top:1px solid rgba(0,0,0,.08)}
+.section-block:first-of-type{border-top:none;padding-top:0}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+.rich-text h2{font-family:'Cormorant Garamond',serif;font-size:56px;line-height:1;margin:0 0 20px;color:var(--off-black)}
+.rich-text h3{font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1;margin:28px 0 14px;color:var(--off-black)}
+.rich-text p,.rich-text li{font-size:17px;line-height:1.8;color:rgba(32,32,32,.8)}
+.rich-text ul{margin:0 0 0 20px;padding:0}
+.rich-text .lead{font-size:22px;line-height:1.6;color:rgba(32,32,32,.9)}
+.info-panel{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.info-panel h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-200);margin:0 0 14px}
+.info-panel p,.info-panel li{font-size:16px;line-height:1.7;color:rgba(32,32,32,.78)}
+.info-panel ul{margin:0 0 0 18px;padding:0}
+.quote-stack{display:grid;gap:18px}
+.quote{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px;font-style:italic}
+.form-shell{background:#fff;border:1px solid rgba(0,0,0,.08);padding:28px}
+.form-shell h3{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1.05;margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid .full{grid-column:1 / -1}
+.form-shell label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-200);margin-bottom:8px;font-weight:600}
+.form-shell input,.form-shell textarea{width:100%;padding:14px 16px;border:1px solid rgba(0,0,0,.14);font:inherit;background:#fff;color:var(--off-black)}
+.form-shell textarea{min-height:130px;resize:vertical}
+.fake-btn{display:inline-block;margin-top:20px;padding:14px 20px;border:1px solid var(--off-black);text-decoration:none;color:var(--off-black);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.meta-item{background:#fff;border:1px solid rgba(0,0,0,.08);padding:20px}
+.meta-item span{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown-200);margin-bottom:10px;font-weight:700}
+.meta-item strong{font-size:18px;line-height:1.5;color:var(--off-black)}
+@media (max-width:900px){.page-hero,.two-col,.cards-grid,.form-grid,.meta-grid{grid-template-columns:1fr}.page-shell{padding:120px 24px 72px}.page-card h3{font-size:36px}}
+</style>
+
 </head>
 <body>
 <nav id="main-nav">
@@ -2047,7 +2096,68 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-<section class="detail-wrap page-shell"><div class="detail-grid"><div><a class="back-link" href="/signal-new/offerings/forums/">← Back to Forums</a><div class="hub-kicker">Forums</div><h1 class="detail-title">Fall 2026 Mixed Forum</h1><div class="detail-meta"><div>Signal Forum</div><div>Fall 2026</div></div></div><div class="detail-copy"><p>A Signal Forum for leaders ready to trade certainty for aliveness and confront the patterns that limit what they can create in the world.</p><p>Twelve leaders. Five retreats a year. One shared agreement: nothing is off-limits in service of truth.</p><div class="cta-links"><a href="/signal-new/connect/">Inquire</a><a href="/signal-new/offerings/forums/">All Forums</a></div></div></div></section>
+<main class="page-shell">
+  <div class="page-inner">
+    <section class="page-hero">
+      <div>
+        <div class="page-kicker">Forums</div>
+        <h1 class="page-title">Signal Forum for Changemakers</h1>
+      </div>
+      <p class="page-intro">A Signal Forum for changemakers ready for radical growth.</p>
+    </section>
+    
+<section class="two-col">
+  <div class="rich-text">
+    <h2>Signal Forum for Changemakers</h2>
+    <p class="lead">Open to changemakers who want to be in a mixed gender group.</p>
+    <p>Signal Forums are built around one shared agreement: nothing is off-limits in service of truth.</p>
+    <h3>Retreats</h3>
+    <p>All retreats begin at 10 AM PST and end at 3:30 PM PST.</p>
+    <ul><li>Sept 22–24</li><li>Nov 18–19</li><li>Feb 17–18</li><li>May 5–6</li><li>July 21–22</li></ul>
+    <h3>Small Group Coaching</h3>
+    <p>60-minute small group coaching calls meet at 9:00 AM PST unless otherwise noted.</p>
+    <ul><li>Oct 7</li><li>Dec 9</li><li>Jan 13</li><li>Mar 10</li><li>Apr 14</li><li>Jun 16</li></ul>
+  </div>
+  <div>
+    <div class="info-panel">
+      <h4>Facilitated by</h4>
+      <p>Diana Chapman &amp; Deb Katz</p>
+      <p><strong>Cost:</strong> $40,000</p>
+      <p><strong>Location:</strong> Private retreat center near Santa Cruz, CA.</p>
+    </div>
+    <div class="form-shell" style="margin-top:18px;">
+      <h3>Apply</h3>
+      <div class="form-grid">
+        <div><label>Name</label><input></div>
+        <div><label>Email Address</label><input type="email"></div>
+        <div><label>Phone Number</label><input></div>
+        <div><label>Company Name</label><input></div>
+        <div><label>Title</label><input></div>
+        <div><label>LinkedIn Profile</label><input></div>
+        <div class="full"><label>Your Enneagram type (if known)</label><input></div>
+        <div class="full"><label>How did you learn about this event?</label><textarea></textarea></div>
+        <div class="full"><label>What is your experience with personal development and self-awareness?</label><textarea></textarea></div>
+        <div class="full"><label>Why are you called to join a Signal Forum?</label><textarea></textarea></div>
+      </div>
+      <a href="/signal-new/connect/" class="fake-btn">Submit Application</a>
+    </div>
+  </div>
+</section>
+<section class="section-block rich-text"><h3>Agreements</h3><ul>
+<li>Take 100% responsibility for your physical, emotional, mental, and spiritual well-being throughout the Forum.</li>
+<li>Stay curious in the face of all challenging feedback, including looking at the opposite of all of your stories.</li>
+<li>Commit to giving direct feedback to peers and facilitators.</li>
+<li>Participate in the entire session, including arriving on time and staying until the end.</li>
+<li>Maintain a 10-minute minimum daily meditation practice.</li>
+<li>Meet weekly with learning partners for a 45-minute call.</li>
+<li>Attend all retreats and small group coaching calls unless an exception has been negotiated.</li>
+<li>Post weekly on the private forum discussion board and comment on others’ updates.</li>
+<li>Pay in full by the due date. There are no refunds.</li>
+<li>Complete homework assignments, Enneagram assessment/interview, and read <em>The 15 Commitments of Conscious Leadership</em>.</li>
+</ul></section>
+
+  </div>
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2081,6 +2191,6 @@
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
-</body>
-</html>
+</footer>
+<script>const navEl=document.getElementById('main-nav');window.addEventListener('scroll',()=>{if(navEl)navEl.classList.toggle('scrolled',window.scrollY>80);});</script>
+</body></html>
