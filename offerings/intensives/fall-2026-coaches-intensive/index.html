@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fall 2026 Coaches Intensive — Signal Institute</title>
+<title>Offerings — Signal Institute</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
 <style>
@@ -1982,10 +1982,44 @@
     .offering-section { padding: 80px 24px; }
     .offerings-hero { padding: 140px 24px 80px; min-height: auto; }
   }
+
+  .page-shell { padding-top: 104px; }
+  .hub-hero { background: var(--green-100); color: var(--off-black); padding: 88px 48px 56px; }
+  .hub-inner { max-width: 1280px; margin: 0 auto; }
+  .hub-kicker { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; margin-bottom: 18px; }
+  .hub-title { font-family: 'Cormorant Garamond', serif; font-size: 86px; line-height: 0.94; letter-spacing: -0.03em; max-width: 760px; }
+  .hub-subtitle { max-width: 760px; margin-top: 24px; font-size: 22px; line-height: 1.5; color: rgba(32,32,32,0.74); }
+  .hub-section { background: var(--green-100); padding: 0 48px 96px; }
+  .cards-grid { max-width: 1280px; margin: 0 auto; display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+  .cards-grid.three { grid-template-columns: repeat(3,1fr); }
+  .hub-card { display:block; background: rgba(255,255,255,0.58); border:1px solid rgba(0,0,0,0.06); padding: 40px; min-height: 260px; position:relative; color: var(--off-black); text-decoration:none; transition: transform .25s ease, border-color .25s ease; }
+  .hub-card:hover { transform: translateY(-4px); border-color: rgba(0,0,0,0.16); }
+  .hub-card .tag { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 28px; opacity: 0.7; font-weight:600; }
+  .hub-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.05; margin: 0 0 18px; text-decoration:none; }
+  .hub-card p { font-size: 18px; line-height: 1.55; color: rgba(32,32,32,0.72); max-width: 42ch; }
+  .hub-card .arrow { position:absolute; right:34px; bottom:28px; font-size: 30px; opacity: 0.35; }
+  .detail-wrap { background: var(--green-100); padding: 88px 48px 96px; color: var(--off-black); }
+  .detail-grid { max-width: 1280px; margin: 0 auto; display:grid; grid-template-columns: minmax(320px,430px) 1fr; gap: 56px; align-items: start; }
+  .detail-title { font-family: 'Cormorant Garamond', serif; font-size: 72px; line-height: .96; letter-spacing: -0.03em; margin-bottom: 18px; }
+  .detail-copy p { font-size: 21px; line-height: 1.65; color: rgba(32,32,32,0.78); margin: 0 0 20px; }
+  .detail-meta { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.12); display:grid; gap:10px; }
+  .detail-meta div { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: rgba(32,32,32,.58); }
+  .back-link { display:inline-block; margin-bottom: 28px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; text-decoration:none; color: rgba(32,32,32,.6); }
+  .back-link:hover { color: var(--off-black); }
+  .cta-links { display:flex; flex-wrap:wrap; gap:14px; margin-top: 28px; }
+  .cta-links a { text-decoration:none; color: var(--off-black); border:1px solid rgba(0,0,0,.16); padding:12px 16px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+  .cta-links a:hover { background: rgba(255,255,255,.55); }
+  .home-offerings a.offering-card, .home-offerings a.offering-card h3, .home-offerings a.offering-card p, .home-offerings a.offering-card .offering-tag { text-decoration:none !important; color: inherit; }
+  .home-offerings .offering-card { display:block; }
+  @media (max-width: 960px) {
+    .hub-title, .detail-title { font-size: 56px; }
+    .cards-grid, .cards-grid.three, .detail-grid { grid-template-columns: 1fr; }
+    .hub-hero, .hub-section, .detail-wrap { padding-left: 24px; padding-right: 24px; }
+  }
+
 </style>
 </head>
 <body>
-
 <nav id="main-nav">
   <div class="nav-logo"><a href="/signal-new/"><svg width="200" height="28" viewBox="0 0 546 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M121.987 2.45466C126.176 4.85958 129.821 8.58312 132.572 11.8453C135.617 9.47874 138.462 8.41363 141.086 8.34168C143.789 8.26758 146.214 9.24912 148.333 10.867C152.424 13.9895 155.426 19.5145 157.235 24.6168C159.636 31.5182 165.783 50.9441 157.303 55.5301C152.613 58.0663 148.794 52.8362 146.84 49.3028L146.839 49.3014C141.263 39.0971 137.222 28.5672 128.509 20.2815C123.741 25.4667 119.678 31.2384 115.62 37.0954C111.498 43.0458 107.38 49.0859 102.549 54.6454L102.546 54.6486L102.539 54.6562L102.539 54.6565C99.2971 58.2265 95.825 62.1697 90.7557 64.1145L90.7523 64.1159C84.8189 66.318 78.4793 63.1145 74.0838 59.5805C71.7851 62.3922 69.1071 65.0096 66.0933 68.2162C62.3165 71.7389 57.9627 76.1022 52.5534 76.6032C43.7694 77.4166 36.9785 68.6671 32.6405 62.265C25.2217 51.3164 19.3597 36.9268 15.974 30.2609C14.3641 32.9512 13.1866 35.0292 11.7336 37.7522C10.768 39.5616 3.36329 54.1783 0.513211 48.3144C-0.877966 45.0349 0.874716 35.2074 2.03657 30.5409C2.76022 27.6345 3.71169 24.857 4.95423 22.7985C6.19035 20.7507 7.77335 19.3234 9.78104 19.3233C12.7398 19.3235 14.8074 22.7606 16.0341 25.0345C19.2424 20.2167 23.3079 15.6605 28.716 13.2944C43.3209 7.46199 54.5506 30.2036 60.9501 39.4358C62.6674 41.6705 64.3247 44.1132 66.0142 46.5433C67.6147 48.8453 69.2469 51.14 71.0013 53.2626C80.2668 38.6359 85.9767 21.3781 97.5274 8.34168C104.331 1.53805 112.358 -3.07235 121.987 2.45466ZM29.846 16.0417C24.7827 18.295 20.7915 22.9975 17.6202 27.8716C22.9483 39.1512 38.9027 85.9768 58.3728 69.0676L58.3707 69.0648C62.7682 65.074 66.3941 60.2847 69.6545 55.3452C67.6244 53.0975 65.782 50.6539 64.0041 48.2335C58.1425 40.2536 52.9466 31.481 46.4891 24.0082C42.4903 19.3808 36.5003 13.9018 29.846 16.0417ZM75.4385 57.892C77.3323 59.5404 79.6324 61.1234 82.0992 62.0794C84.6734 63.0771 87.4076 63.3854 90.0542 62.4038C94.5207 60.704 97.8074 57.0346 101.002 53.4145C105.71 47.8791 109.638 41.8252 113.62 35.7306C117.538 29.7332 121.507 23.6979 126.303 18.1226C124.331 16.2623 122.56 14.7076 120.897 13.5348C102.174 0.33091 85.266 45.4188 75.4385 57.892ZM144.253 12.1787C141.774 11.2077 138.65 11.6432 134.691 14.4656C140.631 22.066 145.895 30.0575 149.716 38.7971C150.655 40.9783 151.548 43.1707 152.66 45.2732C155.541 50.7189 155.167 42.1484 154.925 39.3876C154.435 34.0665 153.252 25.333 150.362 19.0808C148.819 15.7422 146.822 13.1847 144.253 12.1787ZM2.71377 45.1677C2.8915 46.2101 3.25056 46.1375 3.84129 45.329C5.89714 42.4975 7.64023 39.4423 9.32934 36.3394C10.9825 33.3026 12.5883 30.2124 14.3751 27.2697C13.6396 25.9041 13.1135 24.7565 12.4472 23.8924C6.3734 16.0159 2.12174 41.695 2.71377 45.1677Z" fill="white"/>
@@ -2013,438 +2047,7 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-
-<!-- HERO -->
-<section class="offerings-hero">
-  <div class="offerings-hero-inner">
-    <p class="page-hero-eyebrow reveal" style="color:var(--neon-pink);opacity:0.8;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:20px;">Offerings</p>
-    <h1 class="reveal reveal-delay-1">Fall 2026<br>Coaches Intensive</h1>
-    <p class="offerings-hero-sub reveal reveal-delay-2">An intensive for coaches who want to sharpen their instrument and lead from greater presence.</p>
-  </div>
-</section>
-
-<!-- NAV STRIP -->
-<nav class="offering-nav">
-  <div class="offering-nav-inner">
-    <a href="#forums" class="offering-nav-link active">Forums</a>
-    <a href="#shockpoint" class="offering-nav-link">Integrity</a>
-    <a href="#couples" class="offering-nav-link">Couples</a>
-    <a href="#coaches" class="offering-nav-link">Coaches</a>
-    <a href="#coaching" class="offering-nav-link">1:1 Coaching</a>
-    <a href="#facilitation" class="offering-nav-link">Teams</a>
-  </div>
-</nav>
-
-<!-- ── SIGNAL FORUMS ── -->
-<section class="offering-section dark" id="forums">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Flagship</p>
-        <h2>Signal<br>Forums</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">Intense. Provocative. Supportive. Life-changing.</p>
-        <p class="offering-body">The most influential leaders in the world — the ones reshaping healthcare, finance, government, and tech — struggle with the consequences of unseen and unaddressed egoic patterns. What makes Signal Forums different is that we are here to meaningfully disrupt those patterns.</p>
-        <p class="offering-body">With decades of experience facilitating forums around the globe (YPO, CLG, Vistage, EO, Kauffman Fellows), we know what it takes to create the conditions for sustainable transformation. Twelve members. Five retreats a year. Small group coaching. One shared agreement: nothing is off-limits in service of truth.</p>
-      </div>
-    </div>
-    <div class="logistics-grid">
-      <div class="logistics-item">
-        <div class="logistics-label">Weekly</div>
-        <div class="logistics-value">45-min learning partner calls<br>30-min prompt & disruptive feedback</div>
-      </div>
-      <div class="logistics-item">
-        <div class="logistics-label">Yearly</div>
-        <div class="logistics-value">(1×) 3-day kickoff retreat<br>(4×) 2-day retreats<br>(4×) 60-min small group coaching sessions<br>Pod coaching between sessions</div>
-      </div>
-    </div>
-    <div class="offering-testimonials">
-      <h3>What leaders say about Forums.</h3>
-      <div class="offering-quotes">
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.barrons.com/im-63261498?width=700&size=1.5&pixel_ratio=2" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">Laela Sturdy</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">Managing Partner, CapitalG</div>
-            </div>
-          </div>
-          <p>I experienced a profound shift that turned the hardest thing I've ever dealt with into an incredible learning opportunity. I think of Forum as fun. I see it on my calendar and I look forward to it.</p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://www-kiva-org.global.ssl.fastly.net/cms/users/premal_color.jpg" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">Premal Shah</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">President, Kiva.org</div>
-            </div>
-          </div>
-          <p>I've been surprised at how leveraged that time actually is in a group setting. I now experience a higher degree of trust despite the outcomes of the day to day. It's liberated me to apply myself without unhelpful anxiety.</p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.squarespace-cdn.com/content/v1/553ac60be4b0daf2cc35bce1/1459106756815-C61QGCULWWJFU1RLES8G/joe_greenstein-headshot.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 5%;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">Joe Greenstein</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">Co-Founder, InnerSpace; Former CEO, Flixster</div>
-            </div>
-          </div>
-          <p>Taking time to meet with a group every month when you're already dropping balls can feel like too much. I've learned otherwise — and profoundly so.</p>
-        </div>
-      </div>
-    </div>
-    <button class="form-toggle form-toggle-dark" id="forumFormToggle" onclick="toggleForm('forumFormInner', 'forumFormToggle')">
-      Apply for a Forum <em class="form-toggle-icon">+</em>
-    </button>
-    <div class="collapsible-form" id="forumFormInner">
-    <div class="offering-form" id="forum-apply" style="border-top:none;margin-top:0;padding-top:40px;">
-      <h3>Apply for a Forum.</h3>
-      <p class="form-sub">Applications take approximately 30 minutes. We read every one carefully.</p>
-      <form onsubmit="return false;">
-        <div class="form-grid">
-          <div class="form-group"><label>Name</label><input type="text" placeholder="Full name"></div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"></div>
-          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+1 (000) 000-0000"></div>
-          <div class="form-group"><label>Company</label><input type="text" placeholder="Organization"></div>
-          <div class="form-group"><label>Title</label><input type="text" placeholder="Your role"></div>
-          <div class="form-group"><label>LinkedIn</label><input type="url" placeholder="linkedin.com/in/..."></div>
-          <div class="form-group"><label>Enneagram Type</label><input type="text" placeholder="If you know it"></div>
-          <div class="form-group"><label>How did you hear about us?</label><input type="text" placeholder="Referral, event, etc."></div>
-        </div>
-        <div class="form-divider">Some people experience strong emotions, discomfort, or temporary disorientation during this kind of work. The questions below are meant to help you reflect on your readiness and to help us hold the group responsibly. All information is kept strictly confidential.</div>
-        <div class="form-grid">
-          <div class="form-group form-full"><label>Are you currently or have you ever been under the care of a psychiatrist or psychologist? If so, for what?</label><textarea placeholder="Please share what feels relevant"></textarea></div>
-          <div class="form-group form-full"><label>Are you currently or have you ever taken medications for emotional or mental challenges, including mood stabilizers?</label><textarea placeholder="Please share what feels relevant"></textarea></div>
-          <div class="form-group form-full"><label>Have you ever been hospitalized for psychiatric or mental/emotional care?</label><textarea placeholder="Please share what feels relevant"></textarea></div>
-          <div class="form-group form-full"><label>Have you ever had a "nervous breakdown" or been diagnosed with bipolar disorder, schizophrenia, OCD, borderline personality disorder, PTSD, or a psychotic disorder?</label><textarea placeholder="Please share what feels relevant"></textarea></div>
-          <div class="form-group form-full"><label>Have you ever attempted suicide? If so, when?</label><textarea placeholder="Please share what feels relevant"></textarea></div>
-        </div>
-        <button type="submit" class="offering-cta">Submit Application</button>
-      </form>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── SHOCKPOINT ── -->
-<section class="offering-section light" id="shockpoint">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Intensive</p>
-        <h2>Integrity<br>Retreat</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">Stop leaking energy. Hear the signals. Trust your decisions.</p>
-        <p class="offering-body">Most leaders are meaningfully leaking energy when we begin working with them. The more they leak, the harder it is for them to access deep knowing about who they are, how to show up, and what to do.</p>
-        <p class="offering-body">In this intensive, we support you to identify all the ways you are keeping yourself from being the most potent, awake, and aware leader so you can skillfully navigate a rapidly changing and complex world.</p>
-      </div>
-    </div>
-    <div class="logistics-grid">
-      <div class="logistics-item">
-        <div class="logistics-label">Format</div>
-        <div class="logistics-value">3.5 days · 20 people<br>Day 1 begins 3:00pm · Day 4 ends 12:00pm<br>Phones and all devices surrendered</div>
-      </div>
-      <div class="logistics-item">
-        <div class="logistics-label">After</div>
-        <div class="logistics-value">"AfterShock" — a coaching call 30–60 days post-event to integrate what emerged</div>
-      </div>
-    </div>
-    <p style="font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--rust-200);margin:40px 0 16px;">In this training, you will:</p>
-    <ul class="offering-list">
-      <li>Take radical responsibility for your life</li>
-      <li>Tell the truth when it costs you something</li>
-      <li>Stay present when you'd rather default to a habitual pattern</li>
-      <li>Welcome physical and emotional discomfort instead of soothing</li>
-      <li>Challenge deeply held belief systems</li>
-    </ul>
-    <a href="/signal-new/" class="offering-cta">Apply for Integrity</a>
-    <div class="offering-testimonials">
-      <h3>What leaders say about Integrity.</h3>
-      <div class="offering-quotes">
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://images.barrons.com/im-63261498?width=700&size=1.5&pixel_ratio=2" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://images.squarespace-cdn.com/content/v1/553ac60be4b0daf2cc35bce1/1459106756815-C61QGCULWWJFU1RLES8G/joe_greenstein-headshot.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 5%;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://www-kiva-org.global.ssl.fastly.net/cms/users/premal_color.jpg" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── COUPLES INTENSIVE ── -->
-<section class="offering-section dark-rust" id="couples">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Intensive</p>
-        <h2>Couples<br>Intensive</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">10 couples. One weekend. Relationship rebirth.</p>
-        <p class="offering-body">Most relationship work asks you to talk about your patterns. This asks you to play them out — in front of a room that won't let you pretend. The mirror is the group. The work is real.</p>
-        <p class="offering-body">Reveal the unconscious dynamics keeping you from the intimacy you actually want. For courageous couples willing to dive deep and let others learn from their drama too.</p>
-        <p class="offering-body" style="color:rgba(255,255,255,0.5);font-style:italic;">Warning: you will be uncomfortable. That's the point.</p>
-        <div style="margin:32px 0;">
-          <p style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px;">⚠ Diana — add copy for:</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.25);font-style:italic;">• What do couples leave with that they didn't expect?<br>• What makes this different from couples therapy?<br>• Logistics: dates, price, application process</p>
-        </div>
-        <a href="/signal-new/" class="offering-cta">Apply as a Couple</a>
-      </div>
-    </div>
-    <div class="offering-testimonials">
-      <h3>What couples say.</h3>
-      <div class="offering-quotes">
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://www-kiva-org.global.ssl.fastly.net/cms/users/premal_color.jpg" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.barrons.com/im-63261498?width=700&size=1.5&pixel_ratio=2" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.squarespace-cdn.com/content/v1/553ac60be4b0daf2cc35bce1/1459106756815-C61QGCULWWJFU1RLES8G/joe_greenstein-headshot.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 5%;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── COACHES INTENSIVE ── -->
-<section class="offering-section dark-green" id="coaches">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Advanced Training</p>
-        <h2>The Disruptive<br>Coach</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">An advanced training to liberate your challenger.</p>
-        <p class="offering-body">Most coaches are trained to be supportive. Signal trains coaches to be disruptive — in service of their clients' liberation. This 4-day intensive introduces context coaching using The 15 Commitments of Conscious Leadership and the Enneagram.</p>
-        <p class="offering-body">This training is for coaches who sense there's a level of impact they haven't reached yet — and are willing to get uncomfortable to find it. You already know how to hold space. This teaches you how to disturb it.</p>
-        <div style="margin:32px 0;">
-          <p style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(96,255,113,0.35);margin-bottom:8px;">⚠ Diana — add copy for:</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.25);font-style:italic;">• What makes Signal coach training different?<br>• Prerequisites / experience level?<br>• Logistics: dates, price, how to apply</p>
-        </div>
-        <a href="/signal-new/" class="offering-cta">Apply for Coach Training</a>
-      </div>
-    </div>
-    <div style="margin-top:56px;padding-top:48px;border-top:1px solid rgba(255,255,255,0.08);">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-0.02em;color:var(--white);margin-bottom:40px;">What coaches say.</h3>
-      <div class="offering-quotes">
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.barrons.com/im-63261498?width=700&size=1.5&pixel_ratio=2" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://www-kiva-org.global.ssl.fastly.net/cms/users/premal_color.jpg" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(255,255,255,0.12);">
-              <img src="https://images.squarespace-cdn.com/content/v1/553ac60be4b0daf2cc35bce1/1459106756815-C61QGCULWWJFU1RLES8G/joe_greenstein-headshot.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 5%;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--white);">[Name]</div>
-              <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── 1:1 COACHING ── -->
-<section class="offering-section light-gray" id="coaching">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Coaching</p>
-        <h2>1:1<br>Coaching</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">If you're going through a meaningful disruption, we offer coaching to support you to navigate the transition with as much awareness as possible.</p>
-        <p class="offering-body">Tell us who you are. We'll reach out with next steps.</p>
-        <form onsubmit="return false;" style="margin-top:32px;">
-          <div class="form-grid">
-            <div class="form-group"><label>Name</label><input type="text" placeholder="Full name"></div>
-            <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"></div>
-            <div class="form-group"><label>Title</label><input type="text" placeholder="Your role"></div>
-            <div class="form-group"><label>Organization</label><input type="text" placeholder="Where you do your work"></div>
-            <div class="form-group form-full"><label>What are you navigating?</label><textarea placeholder="Share a bit about what's up for you..."></textarea></div>
-          </div>
-          <button type="submit" class="offering-cta">Get in Touch</button>
-        </form>
-      </div>
-    </div>
-    <div style="margin-top:56px;padding-top:48px;border-top:1px solid rgba(0,0,0,0.08);">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-0.02em;color:var(--off-black);margin-bottom:40px;">What leaders say.</h3>
-      <div class="offering-quotes">
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://images.barrons.com/im-63261498?width=700&size=1.5&pixel_ratio=2" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://www-kiva-org.global.ssl.fastly.net/cms/users/premal_color.jpg" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-        <div class="offering-quote">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
-            <div style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(0,0,0,0.1);">
-              <img src="https://images.squarespace-cdn.com/content/v1/553ac60be4b0daf2cc35bce1/1459106756815-C61QGCULWWJFU1RLES8G/joe_greenstein-headshot.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 5%;">
-            </div>
-            <div>
-              <div style="font-size:13px;font-weight:600;color:var(--off-black);">[Name]</div>
-              <div style="font-size:11px;color:rgba(32,32,32,0.4);letter-spacing:0.06em;">REPLACE WITH ACTUAL</div>
-            </div>
-          </div>
-          <p><span style="opacity:0.4;">[Replace with testimonial]</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── GROUP FACILITATION ── -->
-<section class="offering-section dark" id="facilitation">
-  <div class="offering-section-inner">
-    <div class="offering-header">
-      <div>
-        <p class="offering-tag">Custom</p>
-        <h2>Teams<br>Facilitation</h2>
-      </div>
-      <div class="offering-header-right">
-        <p class="offering-lead">Contact us for custom events curated for your specific needs.</p>
-        <p class="offering-body">We work with teams, family offices, and YPO forums. Every engagement is designed from scratch — because your group's patterns are unlike anyone else's, and your disruption should be too.</p>
-        <form onsubmit="return false;" style="margin-top:32px;">
-          <div class="form-grid">
-            <div class="form-group"><label>Name</label><input type="text" placeholder="Full name"></div>
-            <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"></div>
-            <div class="form-group form-full"><label>Teams / Organization</label><input type="text" placeholder="Who are you bringing together?"></div>
-            <div class="form-group form-full"><label>What challenge are you facing?</label><textarea placeholder="Describe what's going on..."></textarea></div>
-            <div class="form-group form-full"><label>What support are you looking for?</label><textarea placeholder="What would a win look like?"></textarea></div>
-          </div>
-          <button type="submit" class="offering-cta">Request a Meeting</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── EASTER EGG ── -->
-<section class="easter-section">
-  <div style="max-width:1200px;margin:0 auto;text-align:center;">
-    <span class="easter-trigger" id="easterTrigger" title=""></span>
-    <div class="easter-content" id="easterContent">
-      <p class="offering-tag" style="color:var(--neon-pink);opacity:0.8;font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:16px;">For the Few</p>
-      <h2>Integrity for the Individual.</h2>
-      <p>Targeted comprehensive support by a circle of trusted advisors to support awakening, resilience to the unknown, integrity, and aligned impact in the world — and to prevent unchecked power from operating without accountability.</p>
-      <p>Ideal to include not just coaches, but the people who are experiencing — or will experience — the impact of the decisions the client is and will make.</p>
-      <p style="color:rgba(255,255,255,0.35);font-style:italic;font-size:14px;">You found it. That's the first sign you might be ready.</p>
-      <a href="mailto:info@thesignalinstitute.com" class="offering-cta" style="background:var(--white);color:var(--off-black);margin-top:32px;display:inline-block;padding:16px 36px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;">Reach Out Directly</a>
-    </div>
-  </div>
-</section>
-
+<section class="detail-wrap page-shell"><div class="detail-grid"><div><a class="back-link" href="/signal-new/offerings/intensives/">← Back to Intensives</a><div class="hub-kicker">Intensives</div><h1 class="detail-title">Fall 2026 Coaches Intensive</h1><div class="detail-meta"><div>Signal Intensive</div><div>Immersive / Device-free</div></div></div><div class="detail-copy"><p>An intensive for coaches who want sharper precision, deeper embodiment, and more freedom in the work.</p><p>These intensives are designed to interrupt limitations and liberate possibilities through pressure, play, and presence.</p><div class="cta-links"><a href="/signal-new/connect/">Inquire</a><a href="/signal-new/offerings/intensives/">All Intensives</a></div></div></div></section>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2478,65 +2081,6 @@
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer>
-
-<script>
-  // Collapsible form
-  function toggleForm(formId, toggleId) {
-    const form = document.getElementById(formId);
-    const btn = document.getElementById(toggleId);
-    const isOpen = form.classList.contains('open');
-    form.classList.toggle('open', !isOpen);
-    btn.classList.toggle('open', !isOpen);
-    const icon = btn.querySelector('.form-toggle-icon');
-    if (icon) icon.textContent = isOpen ? '+' : '×';
-    if (!isOpen) setTimeout(() => btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
-  }
-
-  // Easter egg
-  const easterTrigger = document.getElementById('easterTrigger');
-  const easterContent = document.getElementById('easterContent');
-  let clicks = 0;
-  easterTrigger.addEventListener('click', () => {
-    clicks++;
-    if (clicks === 3) {
-      easterContent.classList.add('revealed');
-      easterContent.style.animation = 'fade-up 0.8s forwards';
-    }
-  });
-
-  // Sticky nav
-  const nav = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); });
-
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-
-  // Active nav on scroll
-  const offeringSections = ['forums','shockpoint','couples','coaches','coaching','facilitation'];
-  const offeringLinks = document.querySelectorAll('.offering-nav-link');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    offeringSections.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 200) current = id;
-    });
-    offeringLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-    });
-  });
-</script>
+</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
 </body>
 </html>

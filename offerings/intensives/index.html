@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intensives — Signal Institute</title>
+<title>Offerings — Signal Institute</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
 <style>
@@ -1982,10 +1982,44 @@
     .offering-section { padding: 80px 24px; }
     .offerings-hero { padding: 140px 24px 80px; min-height: auto; }
   }
+
+  .page-shell { padding-top: 104px; }
+  .hub-hero { background: var(--green-100); color: var(--off-black); padding: 88px 48px 56px; }
+  .hub-inner { max-width: 1280px; margin: 0 auto; }
+  .hub-kicker { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; margin-bottom: 18px; }
+  .hub-title { font-family: 'Cormorant Garamond', serif; font-size: 86px; line-height: 0.94; letter-spacing: -0.03em; max-width: 760px; }
+  .hub-subtitle { max-width: 760px; margin-top: 24px; font-size: 22px; line-height: 1.5; color: rgba(32,32,32,0.74); }
+  .hub-section { background: var(--green-100); padding: 0 48px 96px; }
+  .cards-grid { max-width: 1280px; margin: 0 auto; display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+  .cards-grid.three { grid-template-columns: repeat(3,1fr); }
+  .hub-card { display:block; background: rgba(255,255,255,0.58); border:1px solid rgba(0,0,0,0.06); padding: 40px; min-height: 260px; position:relative; color: var(--off-black); text-decoration:none; transition: transform .25s ease, border-color .25s ease; }
+  .hub-card:hover { transform: translateY(-4px); border-color: rgba(0,0,0,0.16); }
+  .hub-card .tag { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 28px; opacity: 0.7; font-weight:600; }
+  .hub-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; line-height: 1.05; margin: 0 0 18px; text-decoration:none; }
+  .hub-card p { font-size: 18px; line-height: 1.55; color: rgba(32,32,32,0.72); max-width: 42ch; }
+  .hub-card .arrow { position:absolute; right:34px; bottom:28px; font-size: 30px; opacity: 0.35; }
+  .detail-wrap { background: var(--green-100); padding: 88px 48px 96px; color: var(--off-black); }
+  .detail-grid { max-width: 1280px; margin: 0 auto; display:grid; grid-template-columns: minmax(320px,430px) 1fr; gap: 56px; align-items: start; }
+  .detail-title { font-family: 'Cormorant Garamond', serif; font-size: 72px; line-height: .96; letter-spacing: -0.03em; margin-bottom: 18px; }
+  .detail-copy p { font-size: 21px; line-height: 1.65; color: rgba(32,32,32,0.78); margin: 0 0 20px; }
+  .detail-meta { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.12); display:grid; gap:10px; }
+  .detail-meta div { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: rgba(32,32,32,.58); }
+  .back-link { display:inline-block; margin-bottom: 28px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; text-decoration:none; color: rgba(32,32,32,.6); }
+  .back-link:hover { color: var(--off-black); }
+  .cta-links { display:flex; flex-wrap:wrap; gap:14px; margin-top: 28px; }
+  .cta-links a { text-decoration:none; color: var(--off-black); border:1px solid rgba(0,0,0,.16); padding:12px 16px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+  .cta-links a:hover { background: rgba(255,255,255,.55); }
+  .home-offerings a.offering-card, .home-offerings a.offering-card h3, .home-offerings a.offering-card p, .home-offerings a.offering-card .offering-tag { text-decoration:none !important; color: inherit; }
+  .home-offerings .offering-card { display:block; }
+  @media (max-width: 960px) {
+    .hub-title, .detail-title { font-size: 56px; }
+    .cards-grid, .cards-grid.three, .detail-grid { grid-template-columns: 1fr; }
+    .hub-hero, .hub-section, .detail-wrap { padding-left: 24px; padding-right: 24px; }
+  }
+
 </style>
 </head>
 <body>
-
 <nav id="main-nav">
   <div class="nav-logo"><a href="/signal-new/"><svg width="200" height="28" viewBox="0 0 546 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M121.987 2.45466C126.176 4.85958 129.821 8.58312 132.572 11.8453C135.617 9.47874 138.462 8.41363 141.086 8.34168C143.789 8.26758 146.214 9.24912 148.333 10.867C152.424 13.9895 155.426 19.5145 157.235 24.6168C159.636 31.5182 165.783 50.9441 157.303 55.5301C152.613 58.0663 148.794 52.8362 146.84 49.3028L146.839 49.3014C141.263 39.0971 137.222 28.5672 128.509 20.2815C123.741 25.4667 119.678 31.2384 115.62 37.0954C111.498 43.0458 107.38 49.0859 102.549 54.6454L102.546 54.6486L102.539 54.6562L102.539 54.6565C99.2971 58.2265 95.825 62.1697 90.7557 64.1145L90.7523 64.1159C84.8189 66.318 78.4793 63.1145 74.0838 59.5805C71.7851 62.3922 69.1071 65.0096 66.0933 68.2162C62.3165 71.7389 57.9627 76.1022 52.5534 76.6032C43.7694 77.4166 36.9785 68.6671 32.6405 62.265C25.2217 51.3164 19.3597 36.9268 15.974 30.2609C14.3641 32.9512 13.1866 35.0292 11.7336 37.7522C10.768 39.5616 3.36329 54.1783 0.513211 48.3144C-0.877966 45.0349 0.874716 35.2074 2.03657 30.5409C2.76022 27.6345 3.71169 24.857 4.95423 22.7985C6.19035 20.7507 7.77335 19.3234 9.78104 19.3233C12.7398 19.3235 14.8074 22.7606 16.0341 25.0345C19.2424 20.2167 23.3079 15.6605 28.716 13.2944C43.3209 7.46199 54.5506 30.2036 60.9501 39.4358C62.6674 41.6705 64.3247 44.1132 66.0142 46.5433C67.6147 48.8453 69.2469 51.14 71.0013 53.2626C80.2668 38.6359 85.9767 21.3781 97.5274 8.34168C104.331 1.53805 112.358 -3.07235 121.987 2.45466ZM29.846 16.0417C24.7827 18.295 20.7915 22.9975 17.6202 27.8716C22.9483 39.1512 38.9027 85.9768 58.3728 69.0676L58.3707 69.0648C62.7682 65.074 66.3941 60.2847 69.6545 55.3452C67.6244 53.0975 65.782 50.6539 64.0041 48.2335C58.1425 40.2536 52.9466 31.481 46.4891 24.0082C42.4903 19.3808 36.5003 13.9018 29.846 16.0417ZM75.4385 57.892C77.3323 59.5404 79.6324 61.1234 82.0992 62.0794C84.6734 63.0771 87.4076 63.3854 90.0542 62.4038C94.5207 60.704 97.8074 57.0346 101.002 53.4145C105.71 47.8791 109.638 41.8252 113.62 35.7306C117.538 29.7332 121.507 23.6979 126.303 18.1226C124.331 16.2623 122.56 14.7076 120.897 13.5348C102.174 0.33091 85.266 45.4188 75.4385 57.892ZM144.253 12.1787C141.774 11.2077 138.65 11.6432 134.691 14.4656C140.631 22.066 145.895 30.0575 149.716 38.7971C150.655 40.9783 151.548 43.1707 152.66 45.2732C155.541 50.7189 155.167 42.1484 154.925 39.3876C154.435 34.0665 153.252 25.333 150.362 19.0808C148.819 15.7422 146.822 13.1847 144.253 12.1787ZM2.71377 45.1677C2.8915 46.2101 3.25056 46.1375 3.84129 45.329C5.89714 42.4975 7.64023 39.4423 9.32934 36.3394C10.9825 33.3026 12.5883 30.2124 14.3751 27.2697C13.6396 25.9041 13.1135 24.7565 12.4472 23.8924C6.3734 16.0159 2.12174 41.695 2.71377 45.1677Z" fill="white"/>
@@ -2013,63 +2047,13 @@
   </ul>
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
-
-<!-- HERO -->
-<section class="offerings-hero">
-  <div class="offerings-hero-inner">
-    <p class="page-hero-eyebrow reveal" style="color:var(--neon-pink);opacity:0.8;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:20px;">Intensives</p>
-    <h1 class="reveal reveal-delay-1">Signal
-Intensives.</h1>
-    <p class="offerings-hero-sub reveal reveal-delay-2">A main Intensives page with direct paths into each upcoming training.</p>
-  </div>
-</section>
-
-<section class="offerings-section" style="padding-top:72px; padding-bottom:110px;">
-  <div class="offerings-inner">
-    <div class="offerings-grid">
-      <div class="offering-card reveal" style="display:flex; flex-direction:column; justify-content:space-between; min-height:320px;">
-        <div>
-          <p class="offering-tag">June 2026</p>
-          <h3>Katie Hendricks Intensive</h3>
-          <p>An immersive training experience designed for meaningful disruption, embodiment, and relational truth.</p>
-        </div>
-        <div style="margin-top:24px;">
-          <a href="/signal-new/offerings/intensives/katie-hendricks-june-2026/" class="nav-cta" style="display:inline-block;">Learn More</a>
-        </div>
-      </div>
-      <div class="offering-card reveal" style="display:flex; flex-direction:column; justify-content:space-between; min-height:320px;">
-        <div>
-          <p class="offering-tag">Fall 2026</p>
-          <h3>Couples Intensive</h3>
-          <p>A couples intensive for people ready to transform the patterns shaping intimacy, conflict, and freedom.</p>
-        </div>
-        <div style="margin-top:24px;">
-          <a href="/signal-new/offerings/intensives/fall-2026-couples-intensive/" class="nav-cta" style="display:inline-block;">Learn More</a>
-        </div>
-      </div>
-      <div class="offering-card reveal" style="display:flex; flex-direction:column; justify-content:space-between; min-height:320px;">
-        <div>
-          <p class="offering-tag">Fall 2026</p>
-          <h3>Integrity Intensive</h3>
-          <p>A focused immersive on truth-telling, alignment, and the freedom that comes from a Whole Body Yes.</p>
-        </div>
-        <div style="margin-top:24px;">
-          <a href="/signal-new/offerings/intensives/fall-2026-integrity-intensive/" class="nav-cta" style="display:inline-block;">Learn More</a>
-        </div>
-      </div>
-      <div class="offering-card reveal" style="display:flex; flex-direction:column; justify-content:space-between; min-height:320px;">
-        <div>
-          <p class="offering-tag">Fall 2026</p>
-          <h3>Coaches Intensive</h3>
-          <p>An intensive for coaches who want to build their disruptive edge and deepen their capacity to hit the mark.</p>
-        </div>
-        <div style="margin-top:24px;">
-          <a href="/signal-new/offerings/intensive/fall-2026-coaches-intensive/" class="nav-cta" style="display:inline-block;">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="page-shell hub-hero"><div class="hub-inner"><div class="hub-kicker">Offerings / Intensives</div><h1 class="hub-title">Intensives</h1><p class="hub-subtitle">3–4 day trainings. Device-free. For leaders, coaches, or couples. Explore the current intensive offerings below.</p></div></section>
+<section class="hub-section"><div class="cards-grid">
+<a class="hub-card" href="/signal-new/offerings/intensives/katie-hendricks-june-2026/"><div class="tag">Intensive</div><h3>Katie Hendricks — June 2026</h3><p>A special immersive experience hosted through Signal Institute.</p><div class="arrow">↗</div></a>
+<a class="hub-card" href="/signal-new/offerings/intensives/fall-2026-couples-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Couples Intensive</h3><p>For couples ready to confront the patterns that block intimacy, truth, and freedom.</p><div class="arrow">↗</div></a>
+<a class="hub-card" href="/signal-new/offerings/intensives/fall-2026-integrity-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Integrity Intensive</h3><p>A concentrated training around truth-telling, congruence, and whole-body alignment.</p><div class="arrow">↗</div></a>
+<a class="hub-card" href="/signal-new/offerings/intensive/fall-2026-coaches-intensive/"><div class="tag">Intensive</div><h3>Fall 2026 Coaches Intensive</h3><p>For coaches who want stronger range, sharper discernment, and more liberated impact.</p><div class="arrow">↗</div></a>
+</div></section>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -2103,65 +2087,6 @@ Intensives.</h1>
   <div class="footer-bottom">
     <p>© Signal Institute</p>
   </div>
-</footer>
-
-<script>
-  // Collapsible form
-  function toggleForm(formId, toggleId) {
-    const form = document.getElementById(formId);
-    const btn = document.getElementById(toggleId);
-    const isOpen = form.classList.contains('open');
-    form.classList.toggle('open', !isOpen);
-    btn.classList.toggle('open', !isOpen);
-    const icon = btn.querySelector('.form-toggle-icon');
-    if (icon) icon.textContent = isOpen ? '+' : '×';
-    if (!isOpen) setTimeout(() => btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
-  }
-
-  // Easter egg
-  const easterTrigger = document.getElementById('easterTrigger');
-  const easterContent = document.getElementById('easterContent');
-  let clicks = 0;
-  easterTrigger.addEventListener('click', () => {
-    clicks++;
-    if (clicks === 3) {
-      easterContent.classList.add('revealed');
-      easterContent.style.animation = 'fade-up 0.8s forwards';
-    }
-  });
-
-  // Sticky nav
-  const nav = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); });
-
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-
-  // Active nav on scroll
-  const offeringSections = ['forums','shockpoint','couples','coaches','coaching','facilitation'];
-  const offeringLinks = document.querySelectorAll('.offering-nav-link');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    offeringSections.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 200) current = id;
-    });
-    offeringLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-    });
-  });
-</script>
+</footer><script>const nav=document.getElementById("main-nav");window.addEventListener("scroll",()=>{if(nav)nav.classList.toggle("scrolled",window.scrollY>80);});</script>
 </body>
 </html>
