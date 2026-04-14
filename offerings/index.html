@@ -1986,6 +1986,18 @@
   }
 
   .page-shell { padding-top: 104px; }
+
+  .offer-toolbar-wrap { position: sticky; top: 76px; z-index: 90; background: rgba(226,233,226,0.96); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.08); }
+  .offer-toolbar { max-width: 1280px; margin: 0 auto; padding: 14px 48px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .offer-crumbs, .offer-shortcuts { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .offer-toolbar a, .offer-toolbar span { color: rgba(32,32,32,0.72); text-decoration:none; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .offer-toolbar a:hover { color: var(--off-black); }
+  .offer-toolbar a.current, .offer-toolbar a.back-link { color: var(--off-black); }
+  @media (max-width: 900px) {
+    .offer-toolbar-wrap { top: 72px; }
+    .offer-toolbar { padding: 12px 20px; }
+  }
+
   .hub-hero { background: var(--green-100); color: var(--off-black); padding: 88px 48px 56px; }
   .hub-inner { max-width: 1280px; margin: 0 auto; }
   .hub-kicker { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.65; margin-bottom: 18px; }
@@ -2097,6 +2109,7 @@
   <a href="/signal-new/connect/" class="nav-cta">Connect</a>
 </nav>
 <main class="page-shell">
+    <div class="offer-toolbar-wrap"><div class="offer-toolbar"><div class="offer-crumbs"><a class="back-link" href="/signal-new/">Home</a><span>/</span><a class="current" href="/signal-new/offerings/">Offerings</a></div><div class="offer-shortcuts"><a href="/signal-new/offerings/forums/">Forums</a><a href="/signal-new/offerings/intensives/">Intensives</a><a href="/signal-new/offerings/1-1-coaching/">1:1 Coaching</a><a href="/signal-new/offerings/group-team-facilitation/">Group &amp; Team Facilitation</a></div></div></div>
   <div class="page-inner">
     <section class="page-hero">
       <div>
