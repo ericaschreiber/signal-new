@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Signal Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --off-black: #202020;
+    --white: #FFFFFF;
+    --blue-500: #1D262A;
+    --blue-400: #2F3538;
+    --blue-300: #4B5858;
+    --gray-100: #F1F1F1;
+    --gray-200: #D6D6D6;
+    --neon-lime: #60FF71;
+    --neon-indigo: #4D39FF;
+    --neon-sky: #21F8FF;
+    --neon-pink: #FF29DB;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--blue-500);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 48px; background: rgba(29,38,42,0.92); backdrop-filter: blur(12px);
+  }
+  .nav-logo { color: var(--white); text-decoration: none; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--white); }
+  .nav-cta {
+    border: 1px solid rgba(255,255,255,0.35); color: var(--white); text-decoration: none; font-size: 12px;
+    font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 20px;
+  }
+  .hero {
+    padding: 150px 48px 56px; border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(180deg, rgba(77,57,255,0.12), rgba(33,248,255,0.04) 45%, rgba(29,38,42,0) 100%);
+  }
+  .eyebrow {
+    color: var(--neon-sky); opacity: 0.85; font-size: 11px; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; margin-bottom: 18px;
+  }
+  h1, h2 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 700; line-height: 0.94;
+  }
+  h1 { font-size: clamp(54px, 8vw, 104px); max-width: 780px; }
+  .hero-sub {
+    margin-top: 22px; max-width: 760px; font-size: 20px; line-height: 1.65; color: rgba(255,255,255,0.82);
+  }
+  .resources-wrap { padding: 40px 48px 90px; }
+  .section {
+    padding: 36px 0 8px;
+  }
+  .section-header {
+    display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 22px;
+  }
+  .section-header p {
+    max-width: 620px; color: rgba(255,255,255,0.7); line-height: 1.7;
+  }
+  .section h2 { font-size: clamp(34px, 4vw, 56px); }
+  .grid {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;
+  }
+  .card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 22px;
+    padding: 24px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+  }
+  .card-tag {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.8; margin-bottom: 14px;
+  }
+  .card h3 { font-size: 24px; line-height: 1.2; margin-bottom: 12px; }
+  .card p, .card li { color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 15px; }
+  .card ul { padding-left: 18px; }
+  .card li + li { margin-top: 6px; }
+  .newsletter {
+    margin-top: 42px; padding: 30px; border-radius: 26px; background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center;
+  }
+  .newsletter p { color: rgba(255,255,255,0.75); line-height: 1.7; }
+  .newsletter-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 13px 18px; text-decoration: none; border-radius: 999px; font-size: 12px;
+    font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .btn-primary { background: var(--white); color: var(--blue-500); }
+  .btn-secondary { border: 1px solid rgba(255,255,255,0.24); }
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.08); padding: 32px 48px 44px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 22px;
+  }
+  .footer-brand { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.9; }
+  .footer-col h4 {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 14px; color: rgba(255,255,255,0.5);
+  }
+  .footer-col a {
+    display: block; text-decoration: none; color: rgba(255,255,255,0.75); margin-bottom: 10px;
+  }
+  .footer-col a:hover { color: var(--white); }
+  @media (max-width: 980px) {
+    .grid, .newsletter, .footer-grid { grid-template-columns: 1fr; }
+    nav { padding: 20px 24px; }
+    .hero, .resources-wrap, footer { padding-left: 24px; padding-right: 24px; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Signal Institute</a>
+  <ul class="nav-links">
+    <li><a href="/about/">About</a></li>
+    <li><a href="/offerings/">Offerings</a></li>
+    <li><a href="/about/diana/">Diana</a></li>
+    <li><a href="/resources/" class="active">Resources</a></li>
+  </ul>
+  <a href="/connect/" class="nav-cta">Connect</a>
+</nav>
+
+<section class="hero">
+  <p class="eyebrow">Signal Institute</p>
+  <h1>Resources for the work beneath the work.</h1>
+  <p class="hero-sub">A living library of conversations, concepts, practices, and tools for leaders ready to loosen rigid patterns, deepen self-awareness, and lead with more aliveness, integrity, and impact.</p>
+</section>
+
+<main class="resources-wrap">
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow" style="color:var(--neon-lime);">Start here</p>
+        <h2>Listen, read, and practice.</h2>
+      </div>
+      <p>These resources come directly from the Signal worldview in the planning doc: podcasts, books, handouts, and guided visualizations intended to support awareness in real time — not just insight in theory.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div>
+          <div class="card-tag" style="color:var(--neon-sky);">Podcasts</div>
+          <h3>Conversations worth hearing.</h3>
+          <ul>
+            <li>Tim Ferriss</li>
+            <li>Chip Conley</li>
+            <li>Shane Parish</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <div class="card-tag" style="color:var(--neon-pink);">Book</div>
+          <h3><em>The 15 Commitments of Conscious Leadership</em></h3>
+          <p>The foundational book behind much of the conscious leadership work that informs Signal.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <div class="card-tag" style="color:var(--neon-indigo);">Writing</div>
+          <h3>Substack posts</h3>
+          <p>A place for ongoing essays, provocations, and field notes as the Signal body of work continues to unfold.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow" style="color:var(--neon-pink);">Handouts</p>
+        <h2>Concepts you can use immediately.</h2>
+      </div>
+      <p>Short practical tools from the planning doc that translate consciousness work into language, reflection, and action.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div><h3>Above and Below the Line</h3><p>A simple frame for seeing whether you are operating from openness and responsibility or from defensiveness and reactivity.</p></div></article>
+      <article class="card"><div><h3>Drama Triangle</h3><p>Recognize the pull toward victim, villain, and hero dynamics so you can step out of old relational loops.</p></div></article>
+      <article class="card"><div><h3>Teach the Class</h3><p>A prompt for noticing where life is asking you to learn through what you most resist, judge, or avoid.</p></div></article>
+      <article class="card"><div><h3>Discovering Your Zone of Genius</h3><p>Support for identifying the work that is most alive, most natural, and most impactful for you.</p></div></article>
+      <article class="card"><div><h3>Genius Email Campaign</h3><p>A communication practice designed to help clarify your gifts and the value others consistently experience in you.</p></div></article>
+      <article class="card"><div><h3>No Diet & Emotional Intelligence</h3><p>Additional practical handouts named in the planning doc, along with Diana's favorite book list.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow" style="color:var(--neon-sky);">Guided practices</p>
+        <h2>Resources for the body, not just the mind.</h2>
+      </div>
+      <p>The resources plan also calls for guided visualizations, including Matt's pieces and Whole Body Yes, to help people sense what is true before overthinking it.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div><h3>Whole Body Yes</h3><p>A somatic practice for listening beneath the intellect and noticing whether your whole system is aligned.</p></div></article>
+      <article class="card"><div><h3>Matt's Visualizations</h3><p>One to two guided audio experiences intended to deepen presence, awareness, and inner honesty.</p></div></article>
+      <article class="card"><div><h3>More to come</h3><p>This page is designed as a library that can expand as Signal publishes more talks, handouts, essays, and teachings.</p></div></article>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div>
+      <p class="eyebrow" style="color:var(--neon-lime); margin-bottom:12px;">Stay connected</p>
+      <h2>Be the first to know what’s new at Signal.</h2>
+      <p style="margin-top:14px;">The planning doc calls for a monthly newsletter so people can stay close to new writings, trainings, and resources as they are released.</p>
+    </div>
+    <div class="newsletter-actions">
+      <a class="btn btn-primary" href="/connect/">Get in Touch</a>
+      <a class="btn btn-secondary" href="mailto:info@thesignalinstitute.com">Email Us</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Signal Institute</div>
+    </div>
+    <div class="footer-col">
+      <h4>Site Map</h4>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/offerings/">Offerings</a>
+      <a href="/resources/">Resources</a>
+      <a href="/connect/">Connect</a>
+    </div>
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <a href="#">Event List</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Substack</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info@thesignalinstitute.com">info@thesignalinstitute.com</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
